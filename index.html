@@ -5,20 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="dist/css/style.css">
     <title>Bloom or Gloom</title>
 </head>
 <body>
-    <nav>
-        <a href="#">Takaisin portaaliin</a>
-        <a href="#"><img src="" alt="Bloom or Gloom"></a>
-        <a href="english.html">In English</a>
-    </nav>
-    <div class="p-3 lg:py-10 max-w-7xl mx-auto">
-        <h1>Bloom or Gloom</h1>
-        <p>A game about clicking your life back together.</p>
-
-        <p><a href="#"><img alt="" src="img/google-play.svg"></a></p>
+    <div class="fixed h-16 shadow-md w-full bg-white z-50">
+        <nav class="max-w-7xl mx-auto px-3 h-full">
+            <ul class="flex flex-row justify-between items-center h-full">
+                <li><a href="https://webpages.tuni.fi/tamk_20tiko/" class="text-gray-700 hover:text-gray-900">Takaisin <span class="hidden sm:inline-block">pääsivulle</span></a></li>
+                <li><a href="https://homepages.tuni.fi/miro.rauhala/bloom-or-gloom"><img src="img/bloom-or-gloom.png" class="h-14" alt="Bloom or Gloom"></a></li>
+                <li><a href="english.html" class="text-gray-700 hover:text-gray-900">In English</a></li>
+            </ul>
+        </nav>
     </div>
+
+    <header class="p-3 pt-20 md:py-20">
+        <div class="flex flex-col md:flex-row max-w-7xl mx-auto items-center min-h-96">
+            <div class="order-2 md:order-1 w-full md:w-2/3">
+                <h1 class="text-3xl md:text-6xl text-center md:text-left font-heading font-bold mb-3">Bloom or Gloom</h1>
+                <p class="text-xl text-center md:text-left mb-3 tracking-tight">A game about clicking your life back together.</p>
+
+                <p class="mt-3 text-center md:text-left">
+                    <a href="https://play.google.com/store/apps/details?id=fi.tuni.tamk.tiko.depressionaut&hl=fi">
+                        <img alt="Get it on Google Play" class="inline w-52 md:w-60" src="https://play.google.com/intl/en_us/badges/static/images/badges/fi_badge_web_generic.png">
+                    </a>
+                </p>
+            </div>
+
+            <div class="order-1 md:order-2 w-full md:w-1/3 flex justify-center md:justify-start">
+                <img src="img/phone.png" alt="Bloom or Gloom puhelimella" class="w-48 mb-4">
+            </div>
+        </div>
+    </header>
+
+    <section class="px-3 py-10 bg-gray-100">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold mb-10 text-center">Katso traileri</h2>
+            <div class="aspect-w-10 aspect-h-5">
+                <iframe src="https://www.youtube.com/embed/tbRe1k2k0ow" title="YouTube video player" allow="accelerometer; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-3 py-10">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-heading font-bold mb-10 text-center">Tiimi</h2>
+            <div class="flex flex-col md:flex-row justify-center">
+                <div class="flex md:flex-col md:justify-center p-3">
+                    <div style="background-image: url('img/persons/robin.png'); background-size: 100%" class="h-24 w-24 bg-no-repeat bg-center rounded rounded-full mr-3 md:mr-0 md:mb-3"></div>
+                    <div class="pt-4 md:pt-0 md:text-center">
+                        <h3 class="text-lg">Robin</h3>
+                        <p class="text-gray-600">Scrummaster</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col md:justify-center p-3">
+                    <div style="background-image: url('img/persons/jaakko.png'); background-size: 100%" class="h-24 w-24 bg-no-repeat bg-center rounded rounded-full mr-3 md:mr-0 md:mb-3"></div>
+                    <div class="pt-4 md:pt-0 md:text-center">
+                        <h3 class="text-lg">Jaakko</h3>
+                        <p class="text-gray-600">Ohjelmoija</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col md:justify-center p-3">
+                    <div style="background-image: url('img/persons/miro.png'); background-size: 100%" class="h-24 w-24 bg-no-repeat bg-center rounded rounded-full mr-3 md:mr-0 md:mb-3"></div>
+                    <div class="pt-4 md:pt-0 md:text-center">
+                        <h3 class="text-lg">Miro</h3>
+                        <p class="text-gray-600">Ohjelmoija</p>
+                    </div>
+                </div>
+                <div class="flex md:flex-col md:justify-center p-3">
+                    <div style="background-image: url('img/persons/jere.png'); background-size: 100%" class="h-24 w-24 bg-no-repeat bg-center rounded rounded-full mr-3 md:mr-0 md:mb-3"></div>
+                    <div class="pt-4 md:pt-0 md:text-center">
+                        <h3 class="text-lg">Jere</h3>
+                        <p class="text-gray-600">Scrummaster</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="px-3 py-10">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col flex-wrap md:flex-row justify-between">
+                <img src="img/tamk.png" class="p-3 w-30 object-contain" alt="Tampereen ammattikorkeakoulu">
+                <img src="img/elaytyen-osalliseksi.png" class="p-3 w-30 object-contain" alt="Eläytyen osalliseksi">
+                <img src="img/euroopanunioni.png" class="p-3 w-30 object-contain" alt="Euroopan unioni - Euroopan sosiaalirahasto">
+                <img src="img/sasky.png" class="p-3 w-30 object-contain" alt="Sasky koulutuskuntayhtymä">
+                <img src="img/tiko.png" class="p-3 w-30 object-contain" alt="Tietojenkäsittely">
+                <img src="img/vipuvoimaa.png" class="p-3 w-30 object-contain" alt="Vipuvoimaa EU:lta">
+            </div>
+        </div>
+    </section>
 </body>
 </html>

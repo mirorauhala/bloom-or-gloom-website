@@ -5,12 +5,15 @@ module.exports = {
   darkMode: false,
   theme: {
     fontFamily: {
-      'sans': ['Quicksand'],
+      'sans': ['Inter'],
+      'heading': ['Quicksand']
     },
     extend: {}
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/aspect-ratio')
+  ],
 }
